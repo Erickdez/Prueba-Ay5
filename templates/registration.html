@@ -16,19 +16,19 @@
     <div class="login-container">
         <h1>Registration</h1>
 
-        <form>
-            <label for="user">Username</label>
-            <input type="text" name="user" id="user" placeholder="Username">
-            <label for="passw">Password</label>
-            <input type="password" name="passw" id="passw" placeholder="Password">
-            <button type="submit" onclick="registerNewUser()">Log in</button>
-        </form>
-        <br>
-        <a href="#">Lost your Password?</a><br>
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name_reg" placeholder="Full Name">
+        <label for="user">Username</label>
+        <input type="text" name="user" id="user_reg" placeholder="Username">
+        <label for="passw">Password</label>
+        <input type="password" name="passw" id="passw_reg" placeholder="Password">
+        <button onclick="registerNewUser()">Register</button>
+
+
         <a href="{{url_for('login')}}">Have An account?</a>
     </div>
 
-    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </body>
 
 </html>

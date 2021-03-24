@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In - Tienda de Carlitos</title>
     <link rel="stylesheet" href="{{url_for('static', filename='styles/forms.css')}}">
-    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
@@ -17,19 +16,18 @@
     <div class="login-container">
         <h1>Login</h1>
 
-        <form>
-            <label for="user">Username</label>
-            <input type="text" name="user" id="user" placeholder="Username">
-            <label for="passw">Password</label>
-            <input type="password" name="passw" id="passw" placeholder="Password">
-            <button type="submit" onclick="checkLogin()">Log in</button>
-        </form>
-        <br>
+        <label for="user">Username</label>
+        <input type="text" name="user" id="user" placeholder="Username">
+        <label for="passw">Password</label>
+        <input type="password" name="passw" id="passw" placeholder="Password">
+        <button onclick="checkLogin()">Log in</button>
+
+
         <a href="#">Lost your Password?</a><br>
         <a href="{{url_for('register')}}">Don't have An account?</a>
     </div>
 
-    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </body>
 
 </html>
